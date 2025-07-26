@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>3 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +108,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccountRegistration_Test" class="method navigator-link" hash-for-method="Verify_Accnt_RegistrationPage">Verify_Accnt_RegistrationPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC006_Searched_Prod_Added_To_Cart_Test" class="method navigator-link" hash-for-method="Verify_SearchProdAddedToCartFunc">Verify_SearchProdAddedToCartFunc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_SearchProduct_Test" class="method navigator-link" hash-for-method="Verify_Search_Func">Verify_Search_Func</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,14 +131,29 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC001_AccountRegistration_Test</span>
+              <span class="class-name">testCases.TC006_Searched_Prod_Added_To_Cart_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_Accnt_RegistrationPage">
-                  </a> <!-- Verify_Accnt_RegistrationPage -->
-                  <span class="method-name">Verify_Accnt_RegistrationPage</span>
+                  <a name="Verify_SearchProdAddedToCartFunc">
+                  </a> <!-- Verify_SearchProdAddedToCartFunc -->
+                  <span class="method-name">Verify_SearchProdAddedToCartFunc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC005_SearchProduct_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Search_Func">
+                  </a> <!-- Verify_Search_Func -->
+                  <span class="method-name">Verify_Search_Func</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,8 +200,9 @@
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC001_AccountRegistration_Test&quot;/&gt;
       &lt;class name=&quot;testCases.TC002_Login_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.TC005_SearchProduct_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.TC006_Searched_Prod_Added_To_Cart_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -195,7 +216,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ChromeTest (2 classes)</span>
+                <span class="test-name">ChromeTest (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,15 +234,11 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">Verify_Accnt_RegistrationPage</span>
+                <span class="method-in-group-name">Verify_SearchProdAddedToCartFunc</span>
                 <br/>
               </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Verify_Accnt_RegistrationPage</span>
+                <span class="method-in-group-name">Verify_Search_Func</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -230,6 +247,14 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">Verfiy_Login_Funct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Verify_SearchProdAddedToCartFunc</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Verify_Search_Func</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -249,20 +274,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_Accnt_RegistrationPage')
-data.setCell(0, 2, 'testCases.TC001_AccountRegistration_Test')
-data.setCell(0, 3, 12635);
+data.setCell(0, 1, 'Verfiy_Login_Funct')
+data.setCell(0, 2, 'testCases.TC002_Login_Test')
+data.setCell(0, 3, 4919);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Verfiy_Login_Funct')
-data.setCell(1, 2, 'testCases.TC002_Login_Test')
-data.setCell(1, 3, 5070);
+data.setCell(1, 1, 'Verify_Search_Func')
+data.setCell(1, 2, 'testCases.TC005_SearchProduct_Test')
+data.setCell(1, 3, 3541);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Verify_SearchProdAddedToCartFunc')
+data.setCell(2, 2, 'testCases.TC006_Searched_Prod_Added_To_Cart_Test')
+data.setCell(2, 3, 597);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -288,33 +317,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC001_AccountRegistration_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC002_Login_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Verify_Accnt_RegistrationPage</span>
-                <span class="method-start">11487 ms</span>
+                <span class="method-name">Verfiy_Login_Funct</span>
+                <span class="method-start">6675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">24137 ms</span>
+                <span class="method-start">11604 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC002_Login_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC005_SearchProduct_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">24384 ms</span>
+                <span class="method-start">11887 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Verfiy_Login_Funct</span>
-                <span class="method-start">30057 ms</span>
+                <span class="method-name">Verify_Search_Func</span>
+                <span class="method-start">17429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">35127 ms</span>
+                <span class="method-start">20972 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC006_Searched_Prod_Added_To_Cart_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">21206 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Verify_SearchProdAddedToCartFunc</span>
+                <span class="method-start">26734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">27332 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

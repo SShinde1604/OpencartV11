@@ -19,6 +19,12 @@ public class HomePage extends BasePage
 	@FindBy(xpath="//ul//li//a[text()='Register']") WebElement Register;
 	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']//li//a[text()='Login']") WebElement Login;
 	
+	@FindBy(xpath="//input[@name='search']") WebElement Search;
+	@FindBy(xpath="//span//button//i[@class='fa fa-search']") WebElement SearchIcon;
+	@FindBy(xpath="//span[text()='Add to Cart']") WebElement ADDtoCart;
+	
+
+	
 	
 	// Action Methods
 	public void ClickMyAccount()
@@ -37,6 +43,23 @@ public class HomePage extends BasePage
 	{
 		Login.click();
 	}
+	
+	public void SearchBox()
+	{
+		Search.sendKeys("iPhone");
+	}
+	
+	public void SearchIconButn()
+	{
+		SearchIcon.click();
+	}
+
+	public void AddToCart()
+	{
+		ADDtoCart.click();
+	}
+	
+	
 	
 	
 	

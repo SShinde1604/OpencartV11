@@ -13,13 +13,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC001_AccountRegistration_Test">
+      <class name="testCases.TC006_Searched_Prod_Added_To_Cart_Test">
         <methods>
+          <include name="Verify_SearchProdAddedToCartFunc"/>
           <include name="close"/>
-          <include name="Verify_Accnt_RegistrationPage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC001_AccountRegistration_Test -->
+      </class> <!-- testCases.TC006_Searched_Prod_Added_To_Cart_Test -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" thread-count="5" parallel='tests'>
 
-<listener>
+<listeners>
 <listener class-name ="utilities.ExtentReportManager"/>
-</listener>
+</listeners>
 
   <test  name="ChromeTest">
   <parameter name ="os" value="windows" />
